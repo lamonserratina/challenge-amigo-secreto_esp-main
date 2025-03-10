@@ -8,6 +8,12 @@
     --color-white: #FFFFFF;
 }
 
+
+
+
+
+
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -55,14 +61,14 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: ""Fredoka One, sans-serif;
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: var(--color-primary);

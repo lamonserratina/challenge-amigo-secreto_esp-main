@@ -1,5 +1,5 @@
 
-        // Array para almacenar los nombres de los amigos
+// Array para almacenar los nombres de los amigos
 let amigos = [];
 
 // Función para agregar amigos
@@ -13,7 +13,13 @@ function agregarAmigo() {
         return;
     }
 
-    // Agregar el nombre al array
+    // Verificar si el nombre ya existe en el array
+    if (amigos.includes(nombre)) {
+        alert("El nombre ya está en la lista. Por favor, ingrese un nombre diferente.");
+        return;
+    }
+
+    // Agregar el nombre al array si no está duplicado
     amigos.push(nombre);
     actualizarListaAmigos(); // Actualizar la lista en el DOM
     input.value = ""; // Limpiar el campo de entrada
@@ -48,3 +54,4 @@ function sortearAmigo() {
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>El amigo sorteado es: <strong>${amigoSorteado}</strong></li>`;
 }
+
